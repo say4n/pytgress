@@ -1,14 +1,14 @@
-# PyGress
+# PyProgress
 
-### What is PyGress?
+### What is PyProgress?
 
-PyGress is short for **Py**thon Pro**gress**, a library that helps you use fancy spinner for all your command line project needs.
+PyProgress is short for **Py**thon **Progress**, a library that helps you use fancy spinner for all your command line project needs.
 
 It support both determinate and indeterminate progress bars, has sanity checks pre-included.
 
 ### How do I get it ?
 
-Just use `pip install pygress` !
+Just use `pip install pyprogress` !
 
 ### What do I get ?
 

@@ -1,8 +1,8 @@
-from pygress.loaders import *
+from pyprogress.loaders import *
 import time
 
 """
-Pygress - Short name for Python Progress is a library that helps you use fancy spinner for all
+PyProgress - Short name for Python Progress is a library that helps you use fancy spinner for all
 your command line project needs.
 
 It support both determinate and indeterminate progress bars, has sanity checks pre-included.
