@@ -2,7 +2,7 @@
 
 ### What is PytGress?
 
-PyProgress is short for **Pyt**hon Pro**gress**, a library that helps you use fancy spinner for all your command line project needs.
+PytGress is short for **Pyt**hon Pro**gress**, a library that helps you use fancy spinner for all your command line project needs.
 
 It support both determinate and indeterminate progress bars, has sanity checks pre-included.
 
