@@ -1,5 +1,5 @@
 """
-PyProgress - Short for name Python Progress is a library that helps you use fancy spinner for all
+PytGress - Short for name Python Progress is a library that helps you use fancy spinner for all
 your command line project needs.
 
 It support both determinate and indeterminate progress bars, has sanity checks pre-included.
@@ -28,5 +28,3 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMA
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
-
-__all__ = ["determinate", "indeterminate"]

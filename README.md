@@ -1,14 +1,14 @@
-# PyProgress
+# PytGress
 
-### What is PyProgress?
+### What is PytGress?
 
-PyProgress is short for **Py**thon **Progress**, a library that helps you use fancy spinner for all your command line project needs.
+PyProgress is short for **Pyt**hon Pro**gress**, a library that helps you use fancy spinner for all your command line project needs.
 
 It support both determinate and indeterminate progress bars, has sanity checks pre-included.
 
 ### How do I get it ?
 
-Just use `pip install pyprogress` !
+Just use `pip install pytgress` !
 
 ### What do I get ?
 
@@ -36,7 +36,7 @@ Just use `pip install pyprogress` !
 
 Simple progress bar
 
-    from pygress.loaders import determinate
+    from pytgress.loaders import determinate
     
     bar = determinate.simple_bar() 
     bar.set_maximum(100)    # required
@@ -50,7 +50,7 @@ Simple progress bar
 
 Progress bar with an arrow (Inherits `simple_bar`)
 
-    from pygress.loaders import determinate
+    from pytgress.loaders import determinate
     
     b = determinate.arrow_bar()
     b.set_maximum(100)      # required
@@ -63,7 +63,7 @@ Progress bar with an arrow (Inherits `simple_bar`)
 
 #### Indeterminate
 
-    from pygress.loaders import indeterminate
+    from pytgress.loaders import indeterminate
 
     spinner = indeterminate.simple_spinner()
     

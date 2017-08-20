@@ -1,4 +1,4 @@
-from pyprogress.loaders import *
+from pytgress.loaders import *
 import time
 
 """
