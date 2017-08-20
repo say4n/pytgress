@@ -36,7 +36,7 @@ Just use `pip install pytgress` !
 
 Simple progress bar
 
-    from pytgress.loaders import determinate
+    from pytgress import determinate
     
     bar = determinate.simple_bar() 
     bar.set_maximum(100)    # required
@@ -50,7 +50,7 @@ Simple progress bar
 
 Progress bar with an arrow (Inherits `simple_bar`)
 
-    from pytgress.loaders import determinate
+    from pytgress import determinate
     
     b = determinate.arrow_bar()
     b.set_maximum(100)      # required
@@ -63,7 +63,7 @@ Progress bar with an arrow (Inherits `simple_bar`)
 
 #### Indeterminate
 
-    from pytgress.loaders import indeterminate
+    from pytgress import indeterminate
 
     spinner = indeterminate.simple_spinner()
     

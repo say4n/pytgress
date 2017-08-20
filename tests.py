@@ -1,4 +1,4 @@
-from pytgress.loaders import *
+from pytgress import determinate, indeterminate
 import time
 
 """
