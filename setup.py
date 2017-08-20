@@ -7,7 +7,7 @@ setup(
   author = 'Sayan Goswami',
   author_email = 'goswami.sayan47+pygress@gmail.com',
   url = 'https://github.com/sayan98/pygress',
-  download_url = 'https://github.com/sayan98/pygress/archive/0.1.tar.gz',
+  download_url = 'https://github.com/sayan98/pygress/archive/v1.0.0.tar.gz',
   keywords = ['progress', 'bar', 'spinner', "loader", "loading"],
   classifiers = [],
 )
