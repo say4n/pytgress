@@ -40,135 +40,138 @@ if __name__ == "__main__":
 	# Determinate Spinners #
 	# -------------------- #
 
-	# b = determinate.simple_bar()
-	# b.set_maximum(10**6)
-	# b.set_minimum(0)
-	# b.set_filled("▇")
-	# b.set_blank('▒')
-	# b.set_length(15)
+	print("Determinate :\n")
 
-	# for i in range(10**6 + 1):
-	# 	b.update_progress(i)
-	# 	b.show()
+	b = determinate.simple_bar()
+	b.set_maximum(10**5)
+	b.set_minimum(0)
+	b.set_filled("▇")
+	b.set_blank('▒')
+	b.set_length(15)
+
+	for i in range(10**5 + 1):
+		b.update_progress(i)
+		b.show()
 
 
-	# b = determinate.arrow_bar()
-	# b.set_maximum(10**6)
-	# b.set_minimum(0)
-	# b.set_arrow_head(">")
-	# b.set_filled("*")
-	# b.set_blank('=')
-	# b.set_length(20)
+	b = determinate.arrow_bar()
+	b.set_maximum(10**5)
+	b.set_minimum(0)
+	b.set_arrow_head(">")
+	b.set_filled("*")
+	b.set_blank('=')
+	b.set_length(20)
 
-	# for i in range(10**6 + 1):
-	# 	b.update_progress(i)
-	# 	b.show()
+	for i in range(10**5 + 1):
+		b.update_progress(i)
+		b.show()
 
 
 	# ---------------------- #
 	# Indeterminate Spinners #
 	# ---------------------- #
 
+	print("\nIndeterminate :\n")
 
-	# b = indeterminate.simple_spinner()
+	b = indeterminate.simple_spinner()
 	
-	# for i in range(10**2):
-	# 	b.update()
-	# 	time.sleep(0.1)
-	# 	b.show()
+	for i in range(50):
+		b.update()
+		time.sleep(0.05)
+		b.show()
 
 
-	# b = indeterminate.dots_spinner()
+	b = indeterminate.dots_spinner()
 	
-	# for i in range(10**2):
-	# 	b.update()
-	# 	time.sleep(0.1)
-	# 	b.show()
+	for i in range(50):
+		b.update()
+		time.sleep(0.05)
+		b.show()
 
 
-	# b = indeterminate.arrow_spinner()
+	b = indeterminate.arrow_spinner()
 	
-	# for i in range(10**2):
-	# 	b.update()
-	# 	time.sleep(0.1)
-	# 	b.show()
+	for i in range(50):
+		b.update()
+		time.sleep(0.05)
+		b.show()
 
 
-	# b = indeterminate.bars_spinner_v()
+	b = indeterminate.bars_spinner_v()
 	
-	# for i in range(10**2):
-	# 	b.update()
-	# 	time.sleep(0.1)
-	# 	b.show()
+	for i in range(50):
+		b.update()
+		time.sleep(0.05)
+		b.show()
 
 
-	# b = indeterminate.bars_spinner_h()
+	b = indeterminate.bars_spinner_h()
 	
-	# for i in range(10**2):
-	# 	b.update()
-	# 	time.sleep(0.1)
-	# 	b.show()
+	for i in range(50):
+		b.update()
+		time.sleep(0.05)
+		b.show()
 
 
-	# b = indeterminate.bars_spinner()
+	b = indeterminate.bars_spinner()
 	
-	# for i in range(10**2):
-	# 	b.update()
-	# 	time.sleep(0.1)
-	# 	b.show()
+	for i in range(50):
+		b.update()
+		time.sleep(0.05)
+		b.show()
 
 
-	# b = indeterminate.lt_spinner()
+	b = indeterminate.lt_spinner()
 	
-	# for i in range(10**2):
-	# 	b.update()
-	# 	time.sleep(0.1)
-	# 	b.show()
+	for i in range(50):
+		b.update()
+		time.sleep(0.05)
+		b.show()
 
 
-	# b = indeterminate.triangle_spinner()
+	b = indeterminate.triangle_spinner()
 	
-	# for i in range(10**2):
-	# 	b.update()
-	# 	time.sleep(0.1)
-	# 	b.show()
+	for i in range(50):
+		b.update()
+		time.sleep(0.05)
+		b.show()
 	
-	# b = indeterminate.sqaure_spinner()
+	b = indeterminate.sqaure_spinner()
 	
-	# for i in range(10**2):
-	# 	b.update()
-	# 	time.sleep(0.1)
-	# 	b.show()
+	for i in range(50):
+		b.update()
+		time.sleep(0.05)
+		b.show()
 
 
-	# b = indeterminate.circle_spinner_v1()
+	b = indeterminate.circle_spinner_v1()
 	
-	# for i in range(10**2):
-	# 	b.update()
-	# 	time.sleep(0.1)
-	# 	b.show()
+	for i in range(50):
+		b.update()
+		time.sleep(0.05)
+		b.show()
 
 
-	# b = indeterminate.circle_spinner_v2()
+	b = indeterminate.circle_spinner_v2()
 	
-	# for i in range(10**2):
-	# 	b.update()
-	# 	time.sleep(0.1)
-	# 	b.show()
+	for i in range(50):
+		b.update()
+		time.sleep(0.05)
+		b.show()
 
 
-	# b = indeterminate.circle_spinner_v3()
+	b = indeterminate.circle_spinner_v3()
 	
-	# for i in range(10**2):
-	# 	b.update()
-	# 	time.sleep(0.1)
-	# 	b.show()
+	for i in range(50):
+		b.update()
+		time.sleep(0.05)
+		b.show()
 
 
-	# b = indeterminate.braille_spinner()
+	b = indeterminate.braille_spinner()
 	
-	# for i in range(10**2):
-	# 	b.update()
-	# 	time.sleep(0.1)
-	# 	b.show()
+	for i in range(50):
+		b.update()
+		time.sleep(0.05)
+		b.show()
 
