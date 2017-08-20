@@ -30,100 +30,102 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 class simple_bar:
-	"""Simple progress bar showing #s"""
-	def __init__(self):
-		self.maximum = None
-		self.minimum = None
-		self.progress = None
-		self.bar = None
-		self.indicator = "#"
-		self.blank = " "
-		self.length = 10
+    """Simple progress bar showing #s"""
 
-	def set_maximum(self, maximum):
-		"""Set upper bound of progress"""
-		if not isinstance(maximum, (int, float)):
-			raise TypeError("`maximum` must be numeric")
-		else:
-			self.maximum = maximum
+    def __init__(self):
+        self.maximum = None
+        self.minimum = None
+        self.progress = None
+        self.bar = None
+        self.indicator = "#"
+        self.blank = " "
+        self.length = 10
 
-	def set_minimum(self, minimum):
-		"""Set lower bound of progress"""
-		if not isinstance(minimum, (int, float)):
-			raise TypeError("`minimum` must be numeric")
-		else:
-			self.minimum = minimum
+    def set_maximum(self, maximum):
+        """Set upper bound of progress"""
+        if not isinstance(maximum, (int, float)):
+            raise TypeError("`maximum` must be numeric")
+        else:
+            self.maximum = maximum
 
-	def update_progress(self, progress):
-		"""Update self.progress to progress"""
-		if not isinstance(progress, (int, float)):
-			raise TypeError("`progress` value must be numeric")
+    def set_minimum(self, minimum):
+        """Set lower bound of progress"""
+        if not isinstance(minimum, (int, float)):
+            raise TypeError("`minimum` must be numeric")
+        else:
+            self.minimum = minimum
 
-		elif self.maximum is None:
-			raise ValueError("`maximum` is None")
+    def update_progress(self, progress):
+        """Update self.progress to progress"""
+        if not isinstance(progress, (int, float)):
+            raise TypeError("`progress` value must be numeric")
 
-		elif self.minimum is None:
-			raise ValueError("`minimum` is None")
-		
-		elif not self.minimum <= progress <= self.maximum:
-			raise ValueError("`progress` value must lie between `maximum` and `minimum`")	
-				
-		else:
-			self.progress = progress
+        elif self.maximum is None:
+            raise ValueError("`maximum` is None")
 
-	def set_filled(self, indicator):
-		"""Set the progress indicator"""
-		self.indicator = indicator
+        elif self.minimum is None:
+            raise ValueError("`minimum` is None")
 
-	def set_blank(self, blank):
-		"""Set blank character"""
-		self.blank = blank
+        elif not self.minimum <= progress <= self.maximum:
+            raise ValueError(
+                "`progress` value must lie between `maximum` and `minimum`")
 
-	def set_length(self, length):
-		if not isinstance(length, (int, float)):
-			raise TypeError("`progress` value must be numeric")
-		else:
-			self.length = length
+        else:
+            self.progress = progress
 
-	def show(self):
-		"""Print current state of the progress bar"""
-		total = self.length
-		percent = self.progress / (self.maximum - self.minimum)
-		current = int(total * percent)
-		res = " [ " + self.indicator * current + self.blank * (total-current) + " ]\t\t{:.2f}%".format(100*percent)
-		
-		if (self.progress != self.maximum) :
-			print(res, end="\r")
-		else:
-			print(res, end="\n")
+    def set_filled(self, indicator):
+        """Set the progress indicator"""
+        self.indicator = indicator
+
+    def set_blank(self, blank):
+        """Set blank character"""
+        self.blank = blank
+
+    def set_length(self, length):
+        if not isinstance(length, (int, float)):
+            raise TypeError("`progress` value must be numeric")
+        else:
+            self.length = length
+
+    def show(self):
+        """Print current state of the progress bar"""
+        total = self.length
+        percent = self.progress / (self.maximum - self.minimum)
+        current = int(total * percent)
+        res = " [ " + self.indicator * current + self.blank * \
+            (total - current) + " ]\t\t{:.2f}%".format(100 * percent)
+
+        if (self.progress != self.maximum):
+            print(res, end="\r")
+        else:
+            print(res, end="\n")
 
 
 class arrow_bar(simple_bar):
-	"""Simple progress bar with an arrow head"""
-	def __init__(self):
-		super().__init__()
-		self.indicator = "="
-		self.arrow_head = ">"
+    """Simple progress bar with an arrow head"""
 
-	def set_arrow_head(self, arrow_head):
-		"""Set the arrow head"""
-		self.arrow_head = arrow_head[0]
+    def __init__(self):
+        super().__init__()
+        self.indicator = "="
+        self.arrow_head = ">"
 
-	def show(self):
-		"""Print current state of the progress bar"""
-		total = self.length
-		percent = self.progress / (self.maximum - self.minimum)
-		current = int(total * percent) 
-		if 1 <= current < self.length:
-			res = " [ " + self.indicator * (current-1) + self.arrow_head + self.blank * (total-current) +\
-					 " ]\t\t{:.2f}%".format(100*percent)
-		else:
-			res = " [ " + self.indicator * current + self.blank * (total-current) +\
-					 " ]\t\t{:.2f}%".format(100*percent)
-		
-		if (self.progress != self.maximum) :
-			print(res, end="\r")
-		else:
-			print(res, end="\n")
+    def set_arrow_head(self, arrow_head):
+        """Set the arrow head"""
+        self.arrow_head = arrow_head[0]
 
-		
+    def show(self):
+        """Print current state of the progress bar"""
+        total = self.length
+        percent = self.progress / (self.maximum - self.minimum)
+        current = int(total * percent)
+        if 1 <= current < self.length:
+            res = " [ " + self.indicator * (current - 1) + self.arrow_head + self.blank * (total - current) +\
+                " ]\t\t{:.2f}%".format(100 * percent)
+        else:
+            res = " [ " + self.indicator * current + self.blank * (total - current) +\
+                " ]\t\t{:.2f}%".format(100 * percent)
+
+        if (self.progress != self.maximum):
+            print(res, end="\r")
+        else:
+            print(res, end="\n")
