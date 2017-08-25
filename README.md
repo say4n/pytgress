@@ -91,6 +91,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 Fork and hack away !
 
 
+### TODO 
+- [ ] Add colors
+- [ ] ~Add more spinners~
+
+
 
 Sayan   ✌🏼
 
