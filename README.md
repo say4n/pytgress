@@ -1,5 +1,7 @@
 # PytGress
 
+[![forthebadge](http://forthebadge.com/images/badges/made-with-python.svg)](http://forthebadge.com)
+
 ### What is PytGress?
 
 PytGress is short for **Pyt**hon Pro**gress**, a library that helps you use fancy spinner for all your command line project needs.
